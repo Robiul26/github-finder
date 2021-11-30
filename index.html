@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Github Finder</title>
 </head>
 
@@ -15,45 +15,33 @@
             <h2>GitHub Finder</h2>
         </div>
     </nav>
-    <div class="container">
-        <p class="alert">Not found!</p>
-        <div class="card">
+    <div class="container searchContainer">
+        <!-- Alert Box Show Here -->
+        <div class="card" id="form-head">
             <div class="card-body">
                 <h1>Search GitHub Users</h1>
                 <form action="" id="submit-form">
-                    <label for="textUrl">Enter a username to fetch a user profile and repos</label>
-                    <input type="text" id="textUrl">
+                    <label for="searchUser">Enter a username to fetch a user profile and repos</label>
+                    <input type="text" id="searchUser">
                     <button id="searchBtn">Search</button>
                 </form>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
-                <div class="info-box">
-                    <aside>
-                        <img src="./img/1591214866.jpg" alt="">
-                        <a href="#">View Profile</a>
-                    </aside>
-                    <article>
-                        <div class="buttons-wrapper">
-                            <div class="blue">Public Repos:</div>
-                            <div class="gray">Public Gists:</div>
-                            <div class="green">Followers:</div>
-                            <div class="gray">Follwing:</div>
-                        </div>
-                        <div class="detais">
-                            <ul>
-                                <li>Company:</li>
-                                <li>Website/Blog:</li>
-                                <li>Location:</li>
-                                <li>Member Since:</li>
-                            </ul>
-                        </div>
-                    </article>
+                <div class="info-box" id="profile">
+                    <!-- from function -->
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <p>Developed with 💌 by <span onclick="window.open('https://facebook.com/robiidb')">Robiul</span></p>
+    </footer>
+
+    <!-- script files -->
+    <script src="./js/ui.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
