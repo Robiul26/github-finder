@@ -6,9 +6,7 @@ searchBtn.addEventListener('click', (e) => {
     let userText = searchUser.value;
     if (userText != '') {
 
-        ui.showAlert('User is not Found!', 'alert red');
-
-        fetch(`https://api.gitgub.com/users/${userText}`)
+        fetch(`https://api.github.com/users/${userText}`)
             .then(result => result.json())
             .then(data => {
                 if (data.message == 'Not Found') {
