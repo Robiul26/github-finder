@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: blue;
+
+}
+nav h2{
+color: white;
+font-size: 25px;
+font-weight: 500;
+padding: 10px 0;
+text-transform: uppercase;
+}
+.container{
+    padding: 0 10%;
+}
+.container .alert{
+    background: red;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.card{
+    background: #fff;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0;
+}
+.card .card-body h1{
+    color: #444;  
+    margin-bottom: 10px;  
+    font-size: 27px;
+}
+.card .card-body form label{
+color: lightslategray;
+font-size: 12px;
+font-weight: 600;
+}
+.card .card-body form input{
+   width: calc(100% - 10px);
+   margin-top: 10px;
+   height: 40px;
+   font-size: 15px;
+   font-weight: 600;
+   color: lightslategray;
+   border: none;
+   outline: none;
+   padding-left: 10px;
+   border: 1px solid lightgray;
+   border-radius: 5px;
+}
+.card .card-body form input:focus{
+    border: 1px solid green;
+    cursor: w-resize;
+}
+.card .card-body form #searchBtn{
+    width: 100%;
+    background: green;
+    border: none;
+    outline: none;
+    border: 1px solid green;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.card .card-body form #searchBtn:hover{
+    color: green;
+    background: #fff;
+}
+.info-box{
+display: flex;
+flex-direction: column;  /* for mobile */
+align-items: center;
+justify-content: space-between;
+gap: 30px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+aside img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+aside a{
+    background: blue;
+    border: none;
+    outline: none;
+    border: 1px solid blue;
+    color: #fff;
+    padding: 8px 0;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    transition: .5s ease-in-out;
+    width: 100%;
+
+}
+aside a:hover{
+    background: #fff;
+    color: blue;
+
+}
+
+
+article{
+width: 100%;
+}
+
+article .buttons-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+article .buttons-wrapper div{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color:#fff;
+}
+.green{
+    background: green;
+    border: 1px solid green;
+}
+.blue{
+    background: blue;
+    border: 1px solid blue;
+}
+.gray{
+    background: lightslategray;
+    border: 1px solid lightslategray;
+}
+
+.detais ul{
+    list-style: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.detais ul li{
+    border-bottom: 1px solid lightgray;
+    padding: 15px;
+    color: gray;
+    font-weight: 500;
+    font-size: 17px;
+    user-select: none;
+    transition: .5s ease-in-out;
+}
+.detais ul li:hover{
+    background: green;
+    color: #fff;
+}
+.detais ul li:last-child{
+    border-bottom: none;
+}
+
+/* Responsive */
+@media(min-width:768px){
+    .info-box{
+        flex-direction: row; 
+    }
+    
+    article{
+        flex: 3;
+        align-self: flex-start;
+    }
+
+    .card .card-body h1{
+        font-size: 40px;
+    }
+    .card .card-body form label{
+    color: lightslategray;
+    font-size: 20px;
+    }
+    aside{
+       flex: 1;
+    }
+}
